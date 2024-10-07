@@ -1,13 +1,9 @@
 ---
-layout: single
-title: "Exploring SQL Injection Vulnerability"
-date: 2023-10-07
-tags: [sql-injection, vulnerabilities, pentesting]
-excerpt_separator: <!--more-->
+layout: post
+title: "Sample Pentesting Writeup"
+date: YYYY-MM-DD
+categories: [pentesting]
+tags: [xss, sql-injection]
 ---
 
-Introduction to the post.
-
-<!--more-->
-
-The rest of your content goes here.
+This is an example post to showcase how your blog posts will appear. You can write about vulnerabilities, exploits, and research findings here.

@@ -1,43 +1,38 @@
 # Site settings
-title: "Your Blog Title"
-description: "Write-ups of my bug and vulnerability findings."
+title: "Your Name - Blog"
+description: "Web Application Pentesting Writeups"
 url: "https://M3hank.github.io"
-
 author:
   name: "Your Name"
-  avatar: "/assets/images/avatar.png"  # Replace with a valid image or external URL
   bio: "Web Application Pentester"
-  location: "Your Location"
   email: "your.email@example.com"
 
+# Navigation links
+nav:
+  - title: "Projects"
+    url: "/projects/"
+  - title: "About"
+    url: "/about/"
+
+# Social links for footer
 social_links:
   - name: "GitHub"
     url: "https://github.com/M3hank"
     icon: "fab fa-github"
-  
-  - name: "LinkedIn"
-    url: "https://www.linkedin.com/in/m3hank/"
-    icon: "fab fa-linkedin"
-  
+
   - name: "Twitter"
     url: "https://x.com/M3hank"
     icon: "fab fa-twitter"
 
-skin: dark
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/m3hank/"
+    icon: "fab fa-linkedin"
 
-nav:
-  - title: "Home"
-    url: "/"
-  - title: "Blog"
-    url: "/blog/"
-  - title: "About"
-    url: "/about/"
-
-# Comments (Disqus)
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "your-disqus-shortname"  # Replace with your Disqus shortname
+# Footer contact info
+footer:
+  email: "M3hank@example.com"
+  name: "M3hank - Security & Automation Researcher"
+  description: "Web Application Pentesting Writeups"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
@@ -49,10 +44,5 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
 
-
-# Exclude unnecessary files from being processed
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
+# Use light skin (minimalistic look)
+skin: "light"

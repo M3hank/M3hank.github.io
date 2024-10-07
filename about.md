@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "About Me"
+title: "About"
 permalink: /about/
 ---
 
-Write a brief introduction about yourself, your experience in web application pentesting, and the purpose of your blog.
+I am a web application pentester specializing in vulnerability research. I enjoy documenting and sharing my findings through writeups.
