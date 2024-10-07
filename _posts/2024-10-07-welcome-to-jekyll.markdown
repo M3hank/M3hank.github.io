@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "Sample Pentesting Writeup"
-date: YYYY-MM-DD
-categories: [pentesting]
-tags: [xss, sql-injection]
+title: "Welcome to Jekyll"
+date: 2024-10-07
+categories: [jekyll, blog]
+tags: [getting-started]
 ---
-
-This is an example post to showcase how your blog posts will appear. You can write about vulnerabilities, exploits, and research findings here.

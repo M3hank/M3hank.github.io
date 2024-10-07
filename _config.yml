@@ -1,5 +1,5 @@
 # Site settings
-title: "Your Name - Blog"
+title: "Your Blog Title"
 description: "Web Application Pentesting Writeups"
 url: "https://M3hank.github.io"
 author:
@@ -7,14 +7,14 @@ author:
   bio: "Web Application Pentester"
   email: "your.email@example.com"
 
-# Navigation links
+# Navigation
 nav:
   - title: "Projects"
     url: "/projects/"
   - title: "About"
     url: "/about/"
 
-# Social links for footer
+# Social links
 social_links:
   - name: "GitHub"
     url: "https://github.com/M3hank"
@@ -28,15 +28,14 @@ social_links:
     url: "https://www.linkedin.com/in/m3hank/"
     icon: "fab fa-linkedin"
 
-# Footer contact info
+# Footer
 footer:
-  email: "M3hank@example.com"
-  name: "M3hank - Security & Automation Researcher"
+  email: "your.email@example.com"
+  name: "Your Name - Security & Automation Researcher"
   description: "Web Application Pentesting Writeups"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -44,5 +43,9 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
 
-# Use light skin (minimalistic look)
+# Pagination settings
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Theme skin
 skin: "light"
