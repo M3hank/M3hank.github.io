@@ -44,9 +44,11 @@ remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag  # Optional for SEO
-  - jekyll-sitemap  # Optional for generating a sitemap
-  - jekyll-paginate # Optional for paginating blog posts
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
 
 # Exclude unnecessary files from being processed
 exclude:
