@@ -1,51 +1,30 @@
+# Welcome to Jekyll!
+
+
 # Site settings
-title: "Your Blog Title"
-description: "Web Application Pentesting Writeups"
-url: "https://M3hank.github.io"
-author:
-  name: "Your Name"
-  bio: "Web Application Pentester"
-  email: "your.email@example.com"
+title: Mehank - blog
+email: m3hank1337@gmail.com
+description: Web-Application Pentester & Secure Code Reviewer
+baseurl: ""
+url: "https://m3hank.github.io/"
+usernames:
+  twitter: m3hank
+  github:  m3hank
+  linkedin: m3hank
 
-# Navigation
-nav:
-  - title: "Projects"
-    url: "/projects/"
-  - title: "About"
-    url: "/about/"
-
-# Social links
-social_links:
-  - name: "GitHub"
-    url: "https://github.com/M3hank"
-    icon: "fab fa-github"
-
-  - name: "Twitter"
-    url: "https://x.com/M3hank"
-    icon: "fab fa-twitter"
-
-  - name: "LinkedIn"
-    url: "https://www.linkedin.com/in/m3hank/"
-    icon: "fab fa-linkedin"
-
-# Footer
-footer:
-  email: "your.email@example.com"
-  name: "Your Name - Security & Automation Researcher"
-  description: "Web Application Pentesting Writeups"
+permalink: pretty
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-include-cache
+markdown: kramdown
+timezone: "+0530"
 
-# Pagination settings
-paginate: 5
-paginate_path: "/page/:num/"
-
-# Theme skin
-skin: "light"
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false
+      mathjax:  false
+      social:   true
