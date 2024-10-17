@@ -2,22 +2,23 @@
 layout: page
 title: About
 permalink: /about/
-order: 900
 ---
 
 # About Me
 
-Welcome to my blog! I'm M3hank, a passionate web application pentester and secure code reviewer. With a keen eye for vulnerabilities and a love for technology, I aim to uncover security flaws and build safer applications.
+Welcome to my blog! I'm Mehank Kadu, a web application security researcher, pentester, and secure code reviewer. My work revolves around finding vulnerabilities and strengthening code to make applications safer and more resilient.
 
-## My Journey
-My career has taken me through various security disciplines, including:
-- **Penetration Testing (PT)**: Discovering and exploiting security flaws in web applications.
-- **Secure Code Review**: Reviewing and analyzing code to ensure it adheres to the best security practices.
-- **Reconnaissance Tool Development**: Crafting tools to enhance reconnaissance workflows, one module at a time.
+## My Expertise
+I specialize in:
+- **Penetration Testing (PT)**: Identifying and exploiting vulnerabilities in web applications.
+- **Secure Code Reviews**: Ensuring code adheres to security best practices.
+- **Reconnaissance Tool Development**: Building efficient tools for reconnaissance and subdomain enumeration.
 
 ## Why This Blog?
-This blog is a space where I document my findings, write-ups, and experiences in the field of cybersecurity. Whether you're here for security tips, code reviews, or my insights on the latest vulnerabilities, you'll find valuable resources to help improve your security game.
+This blog serves as a platform to document my journey, share findings, and offer insights on web application security. Here, you will find write-ups on vulnerabilities, code reviews, and tools I've created or used in the field.
 
-Thank you for stopping by!
+Feel free to connect with me on [Twitter](https://twitter.com/M3hank), [GitHub](https://github.com/M3hank), or [LinkedIn](https://www.linkedin.com/in/M3hank).
 
---- 
+Thanks for visiting!
+
+---

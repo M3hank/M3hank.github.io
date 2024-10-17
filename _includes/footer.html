@@ -1,55 +1,24 @@
-<footer class="site-footer">
+<div class="footer-col-wrapper">
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-2">
-        <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li><a href="{{ site.url }}">{{ site.url }}</a></li>
-        </ul>
-        <ul class="social-media-list">
-          <li>
-            {% include icon-github.html username=site.usernames.github %}
-          </li>
-          <li>
-            {% include icon-twitter.html username=site.usernames.twitter %}
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/{{ site.usernames.linkedin }}">
-              <span class="fa fa-linkedin-square" style="color:#828282"></span>
-               m3hank
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>Web-Application Pentester & Secure Code Reviewer</p>
-      </div>
-
+  <div class="footer-col">
+    <div class="copyright">
+      {% assign year_from = site.posts[-1].date | date: '%Y' %}
+      {% assign year_to   = site.time | date: '%Y' %}
+      {% if year_from == nil or year_from == year_to %}
+        {% assign year_string = year_from %}
+      {% else %}
+        {% assign year_string = year_from | append: '&nbsp;' | append: '-' | append: '&nbsp;' | append: year_to %}
+      {% endif %}
+      {% if site.author %}
+      <p>Copyright © {{ year_string }} {{ site.author }}; All rights reserved.</p>
+      {% endif %}
     </div>
-
+    <p>
+      Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/ngzhio/jekyll-theme-hamilton">Hamilton</a>
+    </p>
   </div>
 
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "Person",
-    "name": "Mehank Kadu",
-    "url": "https://m3hank.github.io",
-    "image": "https://raw.githubusercontent.com/m3hank/m3hank.github.io/main/imgs/me.jpg",
-    "sameAs": [
-      "https://twitter.com/m3hank",
-      "https://github.com/m3hank",
-      "https://in.linkedin.com/in/m3hank",
-    ],
-    "height": "1.8",
-    "birthDate": "2002-02-27",
-    "knowsAbout": "Cyber Security, Programming, Ethical Hacking, Open Source, Computer Science, Research, Philosophy, Photography",
-    "jobTitle": "Security Researcher",
-  }
-  </script>
-
-</footer>
+  <div class="footer-col">
+    <p>{{ site.description | escape }}</p>
+  </div>
+</div>
