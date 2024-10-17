@@ -1,3 +1,19 @@
 - title:  Dummy
   desc:   "Dummy description"
   href:   https://github.com/
+
+- title: ExplorerPy
+  desc: "A scanning toolkit for subdomain enumeration, directory brute-forcing, and port scanning."
+  href: https://github.com/M3hank/ExplorerPy
+
+- title: Umap - UrlMap
+  desc: "Advanced URL filtering tool written in Go that filters out uninteresting URLs based on certain criteria."
+  href: https://github.com/M3hank/umap
+
+- title: CodeCipher
+  desc: "An all-in-one data conversion utility supporting multiple formats such as URL, Base64, and HTML."
+  href: https://github.com/M3hank/CodeCipher
+
+- title: Sub-Scan
+  desc: "A Multi-Threaded Subdomain Discovery Tool."
+  href: https://github.com/M3hank/Sub-Scan
