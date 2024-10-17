@@ -960,3 +960,13 @@ figcaption.align-center {
     .footer-col:last-child {
       padding-right: 0;
       padding-left: 1rem; } }
+/* Allow email to wrap and not be cut off */
+.u-email {
+  word-wrap: break-word;
+  /* Break long words like email addresses */
+  white-space: normal;
+  /* Allow the email to wrap to the next line */
+  overflow-wrap: anywhere;
+  /* Ensure the text wraps if it's too long */
+  font-size: 0.9em;
+  /* Optional: reduce font size to fit better */ }

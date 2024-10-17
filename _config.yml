@@ -4,7 +4,8 @@ author: Mehank Kadu
 avatar: /logo.png
 location: India
 subscribe: false
-
+paginate: 5
+email: m3hank1337@gmail.com
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
@@ -28,6 +29,7 @@ exclude:
   - scripts/
   - README.md
   - jekyll-theme-hamilton.gemspec
+  - vendor
 
 # Jekyll SEO Tag (Optional)
 # =========================
