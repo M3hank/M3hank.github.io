@@ -14,7 +14,7 @@
  */
 .site-header {
   border-top: 5px solid;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */ /* Removed this line */
   min-height: $base-font-size * 3;
   line-height: $base-font-size * 3;
 
@@ -153,7 +153,7 @@
       li {
         float: left;
       }
-  
+
       li a {
         display: inline-block;
         text-align: center;
@@ -219,7 +219,7 @@
 
 .sidebar-section {
   padding-bottom: $spacing-unit / 2;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */ /* Removed this line */
   margin-bottom: $spacing-unit / 2;
 
   &:last-child {
@@ -244,9 +244,9 @@ ul.contact-list {
   margin-bottom: 0;
 
   li {
-    overflow: hidden; 
-    white-space: nowrap; 
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
@@ -362,7 +362,7 @@ ul.social-icons {
   li {
     padding-top: $spacing-unit / 2;
     padding-bottom: $spacing-unit / 2;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */ /* Removed this line */
     margin-bottom: $spacing-unit;
 
     h2 {
@@ -416,7 +416,7 @@ ul.social-icons {
 .post-header {
   padding-top: $spacing-unit * 2;
   padding-bottom: $spacing-unit;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */ /* Removed this line */
   margin-bottom: $spacing-unit * 2;
   text-align: center;
 }
@@ -428,214 +428,7 @@ ul.social-icons {
 
 .post-footer {
   padding-top: $spacing-unit / 2;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
-
-ul.post-taxonomies {
-  list-style: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 $spacing-unit / 3;
-
-  li {
-    float: left;
-    margin-right: $spacing-unit / 6;
-    padding: 0.3em 0.5em 0.2em 0.5em;
-  }
-}
-
-ul.post-tags {
-  li {
-    border-radius: 0.5em;
-  }
-}
-
-ul.post-categories {
-  li {
-    text-decoration: underline;
-  }
-}
-
-.post-pagination {
-  @include relative-font-size(0.8);
-  clear: both;
-  padding-top: $spacing-unit / 2;
-  padding-bottom: $spacing-unit / 2;
-  border-top: 1px solid;
-
-  @media screen and (min-width: $on-small) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .post-previous,
-  .post-next {
-    display: block;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    text-decoration: none;
-  }
-
-  .post-next {
-    margin-top: $spacing-unit / 2;
-
-    @media screen and (min-width: $on-small) {
-      margin-top: 0;
-      text-align: right;
-    }
-  }
-
-  .post-pagination-label {
-    margin: 0;
-    padding: 0;
-  }
-
-  .post-pagination-title {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-
-// About font sizes for h1-h6, refer to https://stackoverflow.com/a/6140504/13261366
-.post-title,
-.post-content h1 {
-  @include relative-font-size(1.8);
-  font-family: $headline-font-family;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: $base-line-height * $base-font-size * 2;
-
-  @media screen and (min-width: $on-large) {
-    @include relative-font-size(2);
-  }
-}
-
-.post-content {
-  font-family: $reading-font-family;
-  margin-bottom: $spacing-unit;
-
-  h2, h3, h4, h5, h6 {
-    font-family: $headline-font-family;
-  }
-
-  h2         { margin-top: $spacing-unit * 2 }
-  h3         { margin-top: $spacing-unit * 1.5 }
-  h4, h5, h6 { margin-top: $spacing-unit }
-
-  h2 {
-    @include relative-font-size(1.4);
-
-    @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.5);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.17);
-  }
-
-  h4 {
-    @include relative-font-size(1.12);
-  }
-
-  h5 {
-    @include relative-font-size(0.83);
-  }
-
-  h6 {
-    @include relative-font-size(0.75);
-  }
-
-  li {
-    margin-bottom: $spacing-unit / 3;
-
-    > ul,
-    > ol {
-      margin-top: $spacing-unit / 3;
-    }
-
-    p, blockquote, pre, figure, iframe, %vertical-rhythm {
-      margin-bottom: $spacing-unit / 3;
-    }
-  }
-}
-
-/**
- * Taxonomies
- */
-.taxonomies {
-  list-style: none;
-  display: grid;
-  grid-column-gap: 2em;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-
-  @include media-query($on-medium) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .taxonomy {
-    display: flex;
-    padding: 0.25em 0;
-    justify-content: space-between;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid;
-    margin-bottom: $spacing-unit / 3;
-  }
-}
-
-.post-list-by-taxonomy {
-  time {
-    font-family: $code-font-family;
-  }
-}
-
-.back-to-top {
-  display: block;
-  font-size: $base-font-size * 0.8;
-  text-transform: uppercase;
-  text-align: right;
-  text-decoration: none;
-}
-
-/**
- * Alignment
- */
-.align-right {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  float: right;
-}
-
-.align-left {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  float: left;
-}
-
-.align-center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-figcaption.align-right {
-  text-align: right;
-}
-
-figcaption.align-left {
-  text-align: left;
-}
-
-figcaption.align-center {
-  text-align: center;
+  /* Removed border-top and border-bottom */
 }
 
 /**
@@ -643,7 +436,7 @@ figcaption.align-center {
  */
 .site-footer {
   margin-top: $spacing-unit * 2;
-  border-top: 1px solid;
+  border-top: 1px solid; /* Keeping this border */
   padding: $spacing-unit 0;
   @include relative-font-size(0.8);
 
@@ -672,7 +465,6 @@ figcaption.align-center {
     }
   }
 }
-
 
 /* Allow email to wrap and not be cut off */
 .u-email {

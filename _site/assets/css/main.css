@@ -479,7 +479,8 @@ ul.task-list li {
  */
 .site-header {
   border-top: 5px solid;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
+  /* Removed this line */
   min-height: 54px;
   line-height: 54px; }
   @media screen and (max-width: 600px) {
@@ -626,7 +627,8 @@ ul.task-list li {
 
 .sidebar-section {
   padding-bottom: 1rem;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
+  /* Removed this line */
   margin-bottom: 1rem; }
   .sidebar-section:last-child {
     padding-bottom: 0;
@@ -732,7 +734,8 @@ ul.social-icons {
   .post-list li {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
+    /* Removed this line */
     margin-bottom: 2rem; }
     .post-list li h2 {
       margin-bottom: 0;
@@ -772,7 +775,8 @@ ul.social-icons {
 .post-header {
   padding-top: 4rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
+  /* Removed this line */
   margin-bottom: 4rem;
   text-align: center; }
 
@@ -782,159 +786,7 @@ ul.social-icons {
 
 .post-footer {
   padding-top: 1rem;
-  border-top: 1px solid;
-  border-bottom: 1px solid; }
-
-ul.post-taxonomies {
-  list-style: none;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 0.6666666667rem; }
-  ul.post-taxonomies li {
-    float: left;
-    margin-right: 0.3333333333rem;
-    padding: 0.3em 0.5em 0.2em 0.5em; }
-
-ul.post-tags li {
-  border-radius: 0.5em; }
-
-ul.post-categories li {
-  text-decoration: underline; }
-
-.post-pagination {
-  font-size: 0.8rem;
-  clear: both;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top: 1px solid; }
-  @media screen and (min-width: 600px) {
-    .post-pagination {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-  .post-pagination .post-previous,
-  .post-pagination .post-next {
-    display: block;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    text-decoration: none; }
-  .post-pagination .post-next {
-    margin-top: 1rem; }
-    @media screen and (min-width: 600px) {
-      .post-pagination .post-next {
-        margin-top: 0;
-        text-align: right; } }
-  .post-pagination .post-pagination-label {
-    margin: 0;
-    padding: 0; }
-  .post-pagination .post-pagination-title {
-    margin: 0;
-    padding: 0; }
-
-.post-title,
-.post-content h1 {
-  font-size: 1.8rem;
-  font-family: Roboto, "Noto Sans SC", "Noto Sans TC";
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 54px; }
-  @media screen and (min-width: 1100px) {
-    .post-title,
-    .post-content h1 {
-      font-size: 2rem; } }
-
-.post-content {
-  font-family: "Roboto Slab", "Noto Serif SC", "Noto Serif TC";
-  margin-bottom: 2rem; }
-  .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-    font-family: Roboto, "Noto Sans SC", "Noto Sans TC"; }
-  .post-content h2 {
-    margin-top: 4rem; }
-  .post-content h3 {
-    margin-top: 3rem; }
-  .post-content h4, .post-content h5, .post-content h6 {
-    margin-top: 2rem; }
-  .post-content h2 {
-    font-size: 1.4rem; }
-    @media screen and (min-width: 1100px) {
-      .post-content h2 {
-        font-size: 1.5rem; } }
-  .post-content h3 {
-    font-size: 1.17rem; }
-  .post-content h4 {
-    font-size: 1.12rem; }
-  .post-content h5 {
-    font-size: 0.83rem; }
-  .post-content h6 {
-    font-size: 0.75rem; }
-  .post-content li {
-    margin-bottom: 0.6666666667rem; }
-    .post-content li > ul,
-    .post-content li > ol {
-      margin-top: 0.6666666667rem; }
-    .post-content li p, .post-content li blockquote, .post-content li pre, .post-content li figure, .post-content li iframe, .post-content li .highlight {
-      margin-bottom: 0.6666666667rem; }
-
-/**
- * Taxonomies
- */
-.taxonomies {
-  list-style: none;
-  display: grid;
-  grid-column-gap: 2em;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0;
-  padding: 0;
-  font-weight: bold; }
-  @media screen and (max-width: 900px) {
-    .taxonomies {
-      grid-template-columns: repeat(2, 1fr); } }
-  .taxonomies .taxonomy {
-    display: flex;
-    padding: 0.25em 0;
-    justify-content: space-between;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid;
-    margin-bottom: 0.6666666667rem; }
-
-.post-list-by-taxonomy time {
-  font-family: Inconsolata; }
-
-.back-to-top {
-  display: block;
-  font-size: 14.4px;
-  text-transform: uppercase;
-  text-align: right;
-  text-decoration: none; }
-
-/**
- * Alignment
- */
-.align-right {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  float: right; }
-
-.align-left {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  float: left; }
-
-.align-center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
-
-figcaption.align-right {
-  text-align: right; }
-
-figcaption.align-left {
-  text-align: left; }
-
-figcaption.align-center {
-  text-align: center; }
+  /* Removed border-top and border-bottom */ }
 
 /**
  * Site footer
@@ -942,6 +794,7 @@ figcaption.align-center {
 .site-footer {
   margin-top: 4rem;
   border-top: 1px solid;
+  /* Keeping this border */
   padding: 2rem 0;
   font-size: 0.8rem; }
   .site-footer p, .site-footer ul {

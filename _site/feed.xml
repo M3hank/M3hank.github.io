@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-17T19:13:32+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mehank Kadu - Blog</title><subtitle>A blog documenting my journey in web application security, pentesting, and code review.</subtitle><author><name>Mehank Kadu</name></author><entry><title type="html">Critical Vulnerability in E-Commerce Platform: SQL Injection Exploit</title><link href="http://localhost:4000/blog/sql-injection-ecommerce" rel="alternate" type="text/html" title="Critical Vulnerability in E-Commerce Platform: SQL Injection Exploit" /><published>2024-10-17T10:00:00+05:30</published><updated>2024-10-17T10:00:00+05:30</updated><id>http://localhost:4000/blog/example</id><content type="html" xml:base="http://localhost:4000/blog/sql-injection-ecommerce"><![CDATA[]]></content><author><name>M3hank</name></author><category term="pentesting" /><category term="vulnerabilities" /><category term="SQL injection" /><summary type="html"><![CDATA[An in-depth analysis of an SQL Injection vulnerability found in an e-commerce platform.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/imgs/thumbs/sql_injection.png" /><media:content medium="image" url="http://localhost:4000/imgs/thumbs/sql_injection.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Task Item List</title><link href="http://localhost:4000/2016/01/11/task-item-list.html" rel="alternate" type="text/html" title="Task Item List" /><published>2016-01-11T00:00:00+05:30</published><updated>2016-01-11T00:00:00+05:30</updated><id>http://localhost:4000/2016/01/11/task-item-list</id><content type="html" xml:base="http://localhost:4000/2016/01/11/task-item-list.html"><![CDATA[<p>This post tests the style of a task item list.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-17T20:01:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mehank Kadu - Blog</title><subtitle>A blog documenting my journey in web application security, pentesting, and code review.</subtitle><author><name>Mehank Kadu</name></author><entry><title type="html">Dummy Blog Post Title</title><link href="http://localhost:4000/blog/dummy-post" rel="alternate" type="text/html" title="Dummy Blog Post Title" /><published>2024-10-17T10:00:00+05:30</published><updated>2024-10-17T10:00:00+05:30</updated><id>http://localhost:4000/blog/example</id><content type="html" xml:base="http://localhost:4000/blog/dummy-post"><![CDATA[<h1 id="dummy-blog-post-title">Dummy Blog Post Title</h1>
 
-<p>Source:</p>
+<p>This is a dummy blog post to serve as an example. Below is a simple layout of how you can structure your content.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [x] Eating
-<span class="p">-</span> [ ] Walking
-<span class="p">  -</span> [ ] Running
-<span class="p">-</span> [ ] Sleeping
-</code></pre></div></div>
+<h2 id="introduction">Introduction</h2>
 
-<p>Rendered:</p>
+<p>hello</p>
 
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Eating</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Walking
-    <ul class="task-list">
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Running</li>
-    </ul>
-  </li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Sleeping</li>
-</ul>]]></content><author><name>Mehank Kadu</name></author><category term="to-do list" /><summary type="html"><![CDATA[This post tests the style of a task item list.]]></summary></entry></feed>
+<h2 id="section-1-overview">Section 1: Overview</h2>
+
+<p>In this section, we’ll go over some important details regarding the topic at hand.</p>
+
+<h1 id="example-code-block">Example code block</h1>
+<p>echo “Hello, World!”</p>]]></content><author><name>Your Name</name></author><summary type="html"><![CDATA[A brief description of this dummy blog post.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/imgs/thumbs/dummy-image.png" /><media:content medium="image" url="http://localhost:4000/imgs/thumbs/dummy-image.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
