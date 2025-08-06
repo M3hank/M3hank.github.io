@@ -20,7 +20,7 @@ header pre {
     font-family: 'VT323', 'Courier New', Courier, monospace !important;
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-size: 1rem; /* Default desktop size */
+    font-size: 1.3rem; /* Default desktop size */
     line-height: 1.1; /* Adjust line spacing */
 }
 
@@ -366,4 +366,5 @@ body.light-mode #blog-content pre {
 body.light-mode #blog-content code {
     background-color: #e5e7eb;
 }
+
 
