@@ -1,0 +1,367 @@
+body {
+    font-family: 'VT323', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background-color: #000;
+    color: #4ade80; /* Bright green */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body, a, p, div, h2, button, li {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1rem; /* Default desktop size */
+    line-height: 1.1; /* Adjust line spacing */
+}
+
+@media (max-width: 480px) {
+    header pre {
+        font-size: 0.7rem;
+        line-height: 1;
+    }
+}
+
+.nav-link, .tab-btn, .tool-link {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding-right: 0.5rem;
+    font-size: 1.5rem; /* Increased nav font size */
+}
+
+footer a {
+    color: #a3a3a3;
+}
+
+footer a:hover {
+    color: #4ade80;
+}
+
+footer p {
+    color: #6b7280;
+}
+
+hr {
+    border-color: #374151; /* Dark theme border */
+}
+
+.content-child {
+    visibility: hidden;
+}
+
+/* --- Theme Switch Styles --- */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #374151;
+    transition: .4s;
+}
+.slider.round {
+    border-radius: 28px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #111827;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234ade80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    transition: .4s;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #a3a3a3;
+}
+input:checked + .slider:before {
+    background-color: #f9fafb;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111827' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3ccircle cx='12' cy='12' r='5'%3e%3c/circle%3e%3cline x1='12' y1='1' x2='12' y2='3'%3e%3c/line%3e%3cline x1='12' y1='21' x2='12' y2='23'%3e%3c/line%3e%3cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'%3e%3c/line%3e%3cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'%3e%3c/line%3e%3cline x1='1' y1='12' x2='3' y2='12'%3e%3c/line%3e%3cline x1='21' y1='12' x2='23' y2='12'%3e%3c/line%3e%3cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'%3e%3c/line%3e%3cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'%3e%3c/line%3e%3c/svg%3e");
+    transform: translateX(22px);
+}
+
+/* --- Light Mode Styles --- */
+body.light-mode {
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+body.light-mode .nav-link.active,
+body.light-mode .tab-btn.active {
+    color: #16a085;
+}
+
+body.light-mode .nav-link.inactive,
+body.light-mode .tab-btn.inactive {
+    color: #6b7280;
+}
+
+body.light-mode header pre {
+    color: #1f2937;
+}
+
+body.light-mode .text-gray-300 {
+    color: #374151;
+}
+
+body.light-mode .text-gray-400 {
+    color: #4b5563;
+}
+
+body.light-mode footer a {
+    color: #4b5563;
+}
+
+body.light-mode footer a:hover {
+    color: #16a085;
+}
+
+body.light-mode footer p {
+    color: #9ca3af;
+}
+
+body.light-mode hr {
+    border-color: #e5e7eb;
+}
+
+/* --- MODIFIED: Effects (Scanline, Blink, Glitch) --- */
+body::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* This rule fades out the scanlines when in light mode */
+body.light-mode::after {
+    opacity: 0;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.glitch-hover {
+    position: relative;
+}
+
+.glitch-hover:hover,
+.glitch-hover:active {
+    color: #ffffff;
+}
+
+body.light-mode .glitch-hover:hover,
+body.light-mode .glitch-hover:active {
+    color: #000000;
+}
+
+.glitch-hover::before,
+.glitch-hover::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    opacity: 0;
+}
+
+body.light-mode .glitch-hover::before,
+body.light-mode .glitch-hover::after {
+    background: #f9fafb;
+}
+
+.glitch-hover:hover::before,
+.glitch-hover:hover::after,
+.glitch-hover:active::before,
+.glitch-hover:active::after {
+    opacity: 1;
+}
+
+.glitch-hover::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch-hover::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0% { clip-path: inset(15% 0 86% 0); }
+    20% { clip-path: inset(4% 0 45% 0); }
+    40% { clip-path: inset(72% 0 10% 0); }
+    60% { clip-path: inset(90% 0 3% 0); }
+    80% { clip-path: inset(45% 0 45% 0); }
+    100% { clip-path: inset(1% 0 90% 0); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip-path: inset(83% 0 2% 0); }
+    20% { clip-path: inset(20% 0 40% 0); }
+    40% { clip-path: inset(40% 0 30% 0); }
+    60% { clip-path: inset(20% 0 5% 0); }
+    80% { clip-path: inset(80% 0 5% 0); }
+    100% { clip-path: inset(50% 0 50% 0); }
+}
+
+/* --- Blog List Styles --- */
+#blogs-list .content-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-link {
+    font-size: 1.4rem;
+}
+
+#blogs-list .content-child > p {
+    font-size: 1.2rem; /* Increased date size */
+    color: #a3a3a3;
+    white-space: nowrap;
+}
+
+body.light-mode #blogs-list .content-child > p {
+    color: #6b7280;
+}
+
+/* --- Blog Content Styles --- */
+#blog-content h1,
+#blog-content h2,
+#blog-content h3 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #a7f3d0;
+}
+
+#blog-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.35rem;
+}
+
+#blog-content a {
+    text-decoration: underline;
+    color: #6ee7b7;
+}
+#blog-content a:hover {
+    color: #a7f3d0;
+}
+
+#blog-content blockquote {
+    border-left: 4px solid #374151;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #d1d5db;
+}
+
+#blog-content pre {
+    background-color: #1f2937;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+#blog-content code {
+    background-color: #374151;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+#blog-content pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+#blog-content ul, #blog-content ol {
+    list-style-position: inside;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#blog-content hr {
+    margin: 2rem 0;
+}
+
+/* Light Mode Blog Styles */
+body.light-mode #blog-content h1,
+body.light-mode #blog-content h2,
+body.light-mode #blog-content h3 {
+    color: #047857;
+}
+
+body.light-mode #blog-content a {
+    color: #059669;
+}
+body.light-mode #blog-content a:hover {
+    color: #047857;
+}
+
+body.light-mode #blog-content blockquote {
+    border-left-color: #d1d5db;
+    color: #4b5563;
+}
+
+body.light-mode #blog-content pre {
+    background-color: #e5e7eb;
+}
+
+body.light-mode #blog-content code {
+    background-color: #e5e7eb;
+}

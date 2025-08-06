@@ -1,0 +1,27 @@
+[
+    {
+        "name": "ExplorerPy",
+        "description": "Tool-kit for subdomain enumeration, directory brute-forcing, and port scanning.",
+        "url": "https://github.com/m3hank/ExplorerPy"
+    },
+    {
+        "name": "DorkSearcher",
+        "description": "Python utility to find sensitive data by searching for dorks in files and GitHub repos.",
+        "url": "https://github.com/m3hank/DorkSearcher"
+    },
+    {
+        "name": "Umap",
+        "description": "Go-based URL filtering tool that categorizes URLs by file extensions and query patterns.",
+        "url": "https://github.com/m3hank/Umap"
+    },
+    {
+        "name": "SubScan",
+        "description": "Multi-threaded Python tool for rapid subdomain discovery.",
+        "url": "https://github.com/m3hank/SubScan"
+    },
+    {
+        "name": "CodeCipher",
+        "description": "All-in-one converter for URL, Base64, HTML, Unicode, Hex, and Binary formats.",
+        "url": "https://github.com/m3hank/CodeCipher"
+    },
+]

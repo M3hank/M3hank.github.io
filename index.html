@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3hank | Blog</title>
+    
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
+    <meta name="description" content="Portfolio of a Secure Code Reviewer, Penetration Tester, and Bug-Bounty Hunter.">
+    <meta property="og:title" content="M3hank | Cybersecurity Portfolio">
+    <meta property="og:description" content="Blog of a Secure Code Reviewer and Bug-Bounty Hunter.">
+    <meta property="og:image" content="/social-preview.png">
+    <meta property="og:url" content="https://m3hank.github.io/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased">
+    <div class="container p-4 sm:p-8 max-w-3xl mx-auto">
+        <div class="flex justify-between items-start">
+            <header class="mb-8"><pre class="leading-none">
+ __  __ ____  _                 _   
+|  \/  |___ \| |               | |  
+| \  / | __) | |__   __ _ _ __ | | __
+| |\/| ||__ <| '_ \ / _` | '_ \| |/ /
+| |  | |___) | | | | (_| | | | |   < 
+|_|  |_|____/|_| |_|\__,_|_| |_|_|\_\
+            </pre></header>
+            
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-checkbox" aria-label="Toggle light and dark theme">
+                    <input type="checkbox" id="theme-checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+
+        <nav class="mb-12 flex space-x-6 flex-wrap" id="main-nav">
+            <a href="/" class="nav-link active glitch-hover" data-text="index">index</a>
+            <a href="/about" class="nav-link inactive glitch-hover" data-text="about">about</a>
+        </nav>
+
+        <section id="about-section" class="hidden">
+            <h2 class="mb-6">[ About Me ]</h2>
+            <div class="space-y-4">
+                <p class="content-child">Hey, I’m Mehank Kadu, Experienced Secure Code Reviewer and Bug-Bounty Hunter. Skilled in Python, Go, and JavaScript with a focus on automation and secure coding.</p>
+                <div class="content-child"><p class="underline">Education:</p><p>> B.Tech in Cyber-Security – Parul University (2020–2024)</p></div>
+                <div class="content-child">
+                    <p class="underline">Experience:</p>
+                    <ul class="list-disc list-inside">
+                        <li>Secure Code Reviewer – Haksec (Remote, Oct 2023–Present)</li>
+                        <li>Cyber-Security Intern – TechDefence Labs (Dec 2023–Mar 2024)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <main id="main-content">
+            <div class="flex space-x-4 mb-6" id="content-tabs">
+                <h2 data-target="blogs-section" class="tab-btn active glitch-hover" data-text="[ Blogs ]">[ Blogs ]</h2>
+                <h2 data-target="tools-section" class="tab-btn inactive glitch-hover" data-text="[ Tools ]">[ Tools ]</h2>
+            </div>
+            
+            <section id="blogs-section">
+                <div id="blogs-list" class="space-y-4"></div>
+                <div id="blog-viewer" class="hidden">
+                    <button id="back-to-blogs" class="mb-4 hover:underline">&lt; back</button>
+                    <div id="blog-content"></div>
+                </div>
+            </section>
+
+            <section id="tools-section" class="hidden">
+                <div id="tools-list" class="space-y-6"></div>
+            </section>
+        </main>
+
+        <footer class="mt-20 pt-8 text-center">
+            <hr class="mb-8" />
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://linkedin.com/in/m3hank" target="_blank" rel="noopener noreferrer">linkedin</a>
+                <a href="https://github.com/m3hank" target="_blank" rel="noopener noreferrer">github</a>
+                <a href="mailto:m3hank1337@gmail.com">email</a>
+            </div>
+            <p>&copy; 2025 M3hank.</p>
+        </footer>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
