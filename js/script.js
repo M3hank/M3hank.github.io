@@ -1,10 +1,13 @@
+// --- DYNAMIC CONTENT & ROUTING SCRIPT (FIXED) ---
 
 const markdownConverter = new showdown.Converter();
 
+// --- CONFIG ---
 const blogPosts = [
     { title: "How I Caused a Denial of Service by Poisoning the Cache", date: "08 Aug 2025", path: "blogs/blog1.md", slug: "Cache-Poisoning-Dos" },
 ];
 
+// --- VIEWS / RENDER FUNCTIONS ---
 
 /**
  * Renders a list of projects into the DOM.
@@ -112,14 +115,14 @@ function updateNavLinks(path) {
 
 async function fetchProjects() {
     try {
-        const response = await fetch('projects.json');
+        const response = await fetch('/projects.json');
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
         }
         return await response.json();
     } catch (error) {
         console.error("Could not fetch projects.json. Please ensure the file exists and is accessible.", error);
-        return []; 
+        return []; // Return an empty array on failure
     }
 }
 
@@ -135,13 +138,29 @@ async function fetchBlogPost(path) {
     }
 }
 
+// --- ROUTER & NAVIGATION LOGIC ---
+
+/**
+ * The main router. Reads the URL and decides which content to display.
+ */
 async function router() {
+    // THIS IS THE CRITICAL FIX: Check for a redirect from the 404 page
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirectPath = urlParams.get('path');
+    
+    if (redirectPath) {
+        const params = decodeURIComponent(urlParams.get('params') || '');
+        const hash = window.location.hash;
+        // Reconstruct the original URL and replace the current history state
+        history.replaceState({}, '', `/${redirectPath}${params}${hash}`);
+    }
+
     const path = window.location.pathname;
 
     if (path === '/about') {
         switchMainView('about');
     } else if (path.startsWith('/blogs/')) {
-        switchMainView('main'); 
+        switchMainView('main'); // Ensure the main content area is visible
         const slug = path.split('/')[2];
         const post = blogPosts.find(p => p.slug === slug);
         const postHtml = post ? await fetchBlogPost(post.path) : '<h2>404 - Post Not Found</h2>';
@@ -151,6 +170,7 @@ async function router() {
         renderBlogsList();
     }
 }
+
 
 /**
  * Handles navigation clicks to prevent page reloads and update history.
@@ -165,8 +185,10 @@ function handleLinkClick(e) {
     }
 }
 
+// --- INITIALIZATION ---
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Listen for all navigation clicks on the document body
     document.body.addEventListener('click', handleLinkClick);
     
     // Listen for browser back/forward button clicks
@@ -212,10 +234,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Theme Switch Logic
     const themeCheckbox = document.getElementById('theme-checkbox');
     if (themeCheckbox) {
         const savedTheme = localStorage.getItem('theme');
-        // Default to LIGHT unless 'dark' is explicitly saved 
+        // Default to LIGHT unless 'dark' is explicitly saved
         if (savedTheme === 'dark') {
             document.body.classList.remove('light-mode');
             themeCheckbox.checked = false;
@@ -235,10 +258,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
+    // Initial page load
     router();
     fetchProjects().then(renderProjects);
 });
 
-
+// --- HELPER FUNCTIONS (UNCHANGED) ---
 function revealContent(sectionElement) { if (!sectionElement) return; const children = sectionElement.querySelectorAll('.content-child'); children.forEach(child => { child.style.visibility = 'hidden'; }); let delay = 100; children.forEach((child, index) => { setTimeout(() => { child.style.visibility = 'visible'; }, delay * (index + 1)); }); }
