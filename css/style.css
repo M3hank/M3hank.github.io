@@ -132,6 +132,7 @@ body.light-mode .tab-btn.inactive {
 }
 
 body.light-mode header pre {
+    font-family: 'VT323', 'Courier New', Courier, monospace !important;
     color: #1f2937;
 }
 
@@ -366,5 +367,6 @@ body.light-mode #blog-content pre {
 body.light-mode #blog-content code {
     background-color: #e5e7eb;
 }
+
 
 
