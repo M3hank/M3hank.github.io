@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Get the path the user was trying to access
+      const path = window.location.pathname;
+
+      // Keep the query string and hash, if they exist
+      const params = window.location.search;
+      const hash = window.location.hash;
+
+      // Redirect the user back to the index page, but pass the
+      // original path in the query string so our main script can read it.
+      window.location.replace(
+        '/' + 
+        '?path=' + encodeURIComponent(path.substring(1)) +
+        '&params=' + encodeURIComponent(params) +
+        hash
+      );
+    </script>
+  </head>
+  <body>
+    If you are not redirected automatically, please <a href="/">click here</a>.
+  </body>
+</html>

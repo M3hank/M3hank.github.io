@@ -1,0 +1,27 @@
+[
+    {
+        "name": "ExplorerPy",
+        "description": "Tool-kit for subdomain enumeration, directory brute-forcing, and port scanning. (⭐ 10+ Stars)",
+        "url": "https://github.com/M3hank/ExplorerPy"
+    },
+    {
+        "name": "umap",
+        "description": "An advanced URL filtering tool written in Go that intelligently filters out uninteresting endpoints to streamline recon.",
+        "url": "https://github.com/M3hank/umap"
+    },
+    {
+        "name": "SubSentry",
+        "description": "A continuous monitoring tool that watches targets for new subdomains and sends real-time alerts via Discord webhooks.",
+        "url": "https://github.com/M3hank/SubSentry"
+    },
+    {
+        "name": "Google Dorker",
+        "description": "A client-side, precision dorking tool designed for authorized security recon and bug bounty hunting.",
+        "url": "https://github.com/M3hank/google-dorker"
+    },
+    {
+        "name": "FavHunt",
+        "description": "A fast, favicon-based asset mapping and technology fingerprinting tool for advanced reconnaissance.",
+        "url": "https://github.com/M3hank/FavHunt"
+    }
+]
